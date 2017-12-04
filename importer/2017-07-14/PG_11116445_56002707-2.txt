@@ -1,0 +1,13 @@
+v0002	2707	12/09/17 16:10:30	A	60	12/09/17 15:10:30	0
+data/hora	status simpl.	status	term.	indice da rede	rede	operação	cod. operação	tipo cartão	tipo financ.	parcelas	data pré-datado	nome cartão	moeda	valor	num. sequencial	num. sessão	ref. local	ref. host	autoriz.	data/hora orig.	ref. local orig.	ref. host orig.	núm. lógico	cód. estab.	mensagem	doc. fiscal	valor original	desconto (-)	troco (+)	solução	cod. checkout	checkout	conf. checkout	dados adic. #1	dados adic. #2	dados adic. #3	dados adic. #4	número de série do crypto-head	dados do evento	hash	
+12/09/17 15:23	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		MAESTRO	986	12,00	66367	255	522899	522899	648287				42005592	0010184566910002	APROVADA 648287 					0	1	Cliente Windows	48							
+12/09/17 15:26	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		MAESTRO	986	11,00	66368	1	522900	522900	669333				42005592	0010184566910002	APROVADA 669333 					0	1	Cliente Windows	48							
+12/09/17 15:33	1	1 (ok)	00	0	CIELO	VD CRED 	1	1	1	1		VISA CREDITO	986	6,00	66369	2	522901	522901	068545				42005592	0010184566910002	APROVADA 068545 					0	1	Cliente Windows	48							
+12/09/17 15:35	1	1 (ok)	00	0	CIELO	VD CRED 	1	1	1	1		MASTERCARD	986	17,50	66370	3	522902	522902	039307				42005592	0010184566910002	APROVADA 039307 					0	1	Cliente Windows	48							
+12/09/17 15:44	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		MAESTRO	986	52,00	66371	4	522903	522903	445250				42005592	0010184566910002	APROVADA 445250 					0	1	Cliente Windows	48							
+12/09/17 15:48	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		VISA ELECTRO	986	16,00	66372	5	522904	522904	156917				42005592	0010184566910002	APROVADA 156917 					0	1	Cliente Windows	48							
+12/09/17 15:54	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		ELO DEBITO	986	37,41	66373	6	522905	522905	485074				42005592	0010184566910002	APROVADA 485074 					0	1	Cliente Windows	48							
+12/09/17 15:58	1	1 (ok)	00	0	CIELO	VD CRED 	1	1	1	1		MASTERCARD	986	23,06	66374	7	522906	522906	035302				42005592	0010184566910002	APROVADA 035302 					0	1	Cliente Windows	48							
+12/09/17 16:02	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		ELO DEBITO	986	33,90	66375	8	522907	522907	681135				42005592	0010184566910002	APROVADA 681135 					0	1	Cliente Windows	48							
+12/09/17 16:12	1	1 (ok)	00	0	CIELO	VD DEB 	1	2	1	1		ELO DEBITO	986	64,90	66376	9	522908	522908	906523				42005592	0010184566910002	APROVADA 906523 					0	1	Cliente Windows	48							
+10	CCBC9C4B90AF3EDE83398E7C65B46A7199BC9481	27377	0

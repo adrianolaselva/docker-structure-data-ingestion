@@ -1,0 +1,18 @@
+
+version: '3'
+
+services:
+  logstash:
+      container_name: logstash
+      build: ./.docker/
+      privileged: true
+      volumes:
+        - ./config:/usr/share/logstash/config/
+        - ./pipeline:/usr/share/logstash/pipeline/
+        - ./input:/usr/share/logstash/data/plugins/inputs/file/
+        - ./file:/file
+        - ./importer:/importer
+      env_file:
+        - .env
+      environment:
+        LOGSTASH_VERSION: ${TESTE}
