@@ -1,5 +1,0 @@
-v0002	1319682	12/09/17 14:18:15	A	60	12/09/17 13:18:14	0
-data/hora	status simpl.	status	term.	indice da rede	rede	operação	cod. operação	tipo cartão	tipo financ.	parcelas	data pré-datado	nome cartão	moeda	valor	num. sequencial	num. sessão	ref. local	ref. host	autoriz.	data/hora orig.	ref. local orig.	ref. host orig.	núm. lógico	cód. estab.	mensagem	doc. fiscal	valor original	desconto (-)	troco (+)	solução	cod. checkout	checkout	conf. checkout	dados adic. #1	dados adic. #2	dados adic. #3	dados adic. #4	número de série do crypto-head	dados do evento	hash	
-12/09/17 13:19	1	1 (ok)	00	0	CIELO	VD CRED 	1	1	1	1		VISA CREDITO	986	60,00	2768	215	249819	249819	694456				41020258	0010075251070001	APROVADA 694456 	4923				0	1	Cliente Windows	48							
-12/09/17 13:53	1	1 (ok)	00	0	CIELO	VD CRED 	1	1	1	1		MASTERCARD	986	20,00	2769	216	249820	249820	R54328				41020258	0010075251070001	APROVADA R54328 	4924				0	1	Cliente Windows	48							
-2	B71FB8435C945945E38FA435D923031A8A68D926	8000	0

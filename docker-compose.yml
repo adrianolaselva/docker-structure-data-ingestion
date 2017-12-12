@@ -12,6 +12,7 @@ services:
         - ./input:/usr/share/logstash/data/plugins/inputs/file/
         - ./file:/file
         - ./importer:/importer
+        - ./tmp/logstash:/tmp/logstash
       env_file:
         - .env
       environment:
