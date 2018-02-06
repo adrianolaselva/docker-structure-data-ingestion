@@ -3,3 +3,4 @@
 importer/*
 input/*
 tmp
+/file/.sincedb
