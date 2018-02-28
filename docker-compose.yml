@@ -11,6 +11,8 @@ services:
         - ./pipeline:/usr/share/logstash/pipeline/
         - ./input:/usr/share/logstash/data/plugins/inputs/file/
         - ./file:/file
+        - ../servidor:/servidor
+        - ../queue:/usr/share/logstash/queue
         - ./importer:/importer
       env_file:
         - .env
