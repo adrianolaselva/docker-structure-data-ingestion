@@ -2,19 +2,38 @@
 version: '3'
 
 services:
-  logstash:
-      container_name: logstash
-      build: ./.docker/
-      privileged: true
-      volumes:
-        - ./config:/usr/share/logstash/config/
-        - ./pipeline:/usr/share/logstash/pipeline/
-        - ./input:/usr/share/logstash/data/plugins/inputs/file/
-        - ./file:/file
-        - ../servidor:/servidor
-        - ../queue:/usr/share/logstash/queue
-        - ./importer:/importer
-      env_file:
-        - .env
+  elasticsearch:
+      image: docker.elastic.co/elasticsearch/elasticsearch-platinum:${TAG}
+      container_name: elasticsearch
+      environment: ['http.host=0.0.0.0', 'transport.host=127.0.0.1', 'ELASTIC_PASSWORD=${ELASTIC_PASSWORD}']
+      ports: ['127.0.0.1:9200:9200']
+      networks: ['stack']
+
+  kibana:
+      image: docker.elastic.co/kibana/kibana:${TAG}
+      container_name: kibana
       environment:
-        LOGSTASH_VERSION: ${TESTE}
+        - ELASTICSEARCH_USERNAME=kibana
+        - ELASTICSEARCH_PASSWORD=${ELASTIC_PASSWORD}
+      ports: ['127.0.0.1:5601:5601']
+      networks: ['stack']
+      depends_on: ['elasticsearch']
+
+#  logstash:
+#      container_name: logstash
+#      build: ./.docker/
+#      privileged: true
+#      volumes:
+#        - ./config:/usr/share/logstash/config/
+#        - ./pipeline:/usr/share/logstash/pipeline/
+#        - ./input:/usr/share/logstash/data/plugins/inputs/file/
+#        - ./file:/file/
+#        - ../servidor:/servidor/
+#        - ../queue:/usr/share/logstash/queue/
+#        - ./importer:/importer/
+#      env_file:
+#        - .env
+#      environment:
+#        LOGSTASH_VERSION: ${TESTE}
+
+networks: {stack: {}}
