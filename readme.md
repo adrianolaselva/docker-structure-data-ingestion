@@ -1,15 +1,15 @@
 
-##Ambiente elasticsearch docker
+## Ambiente elasticsearch docker
 
 *   Elasticsearch 6.2.1
 *   Kibana 6.2.1
 
 
-###Exemplos de operações mais utilizadas com elasticsearch
+### Exemplos de operações mais utilizadas com elasticsearch
 
 
 
-####Criar novo document type
+#### Criar novo document type
 
 ```ssh
 curl -X PUT \
@@ -25,14 +25,14 @@ curl -X PUT \
 }'
 ```
 
-####remover document type
+#### Remover document type
 ```ssh
 curl -X DELETE \
   http://elastic:changeme@localhost:9200/report \
   -H 'Content-Type: application/json'
 ```
 
-####Inserir registro
+#### Inserir registro
 ```ssh
 curl -X POST \
   http://elastic:changeme@localhost:9200/report/data_01 \
@@ -45,7 +45,7 @@ curl -X POST \
 }'
 ```
 
-####Alterar registro
+#### Alterar registro
 ```ssh
 curl -X PUT \
   http://elastic:changeme@localhost:9200/report/data_01/3IsRDGIB3KaJWBoIZ7ah \
@@ -58,7 +58,7 @@ curl -X PUT \
 }'
 ```
 
-####Carregar registro
+#### Carregar registro
 ```ssh
 curl -X GET \
   http://elastic:changeme@localhost:9200/report/data_01/_search \
@@ -79,14 +79,14 @@ curl -X GET \
 }'
 ```
 
-####Remover registro
+#### Remover registro
 ```ssh
 curl -X DELETE \
   http://elastic:changeme@localhost:9200/report/data_01/3IsRDGIB3KaJWBoIZ7ah \
   -H 'Content-Type: application/json'
 ```
 
-####Remover por query
+#### Remover por query
 ```ssh
 curl -X POST \
   http://elastic:changeme@localhost:9200/report/data_01/_delete_by_query?conflicts=proceed \
@@ -100,7 +100,7 @@ curl -X POST \
 }'
 ```
 
-####Alterar por query
+#### Alterar por query
 ```ssh
 curl -X POST \
   http://elastic:changeme@localhost:9200/report/data_01/_update_by_query?conflicts=proceed \
@@ -118,7 +118,7 @@ curl -X POST \
 }'
 ```
 
-####Carrega registros agrupados por data especificando o formato
+#### Carrega registros agrupados por data especificando o formato
 ```ssh
 curl -X GET \
   http://elastic:changeme@localhost:9200/report/data_01/_search \
@@ -149,7 +149,7 @@ curl -X GET \
 }'
 ```
 
-####Reindexiar
+#### Reindexiar
 ```ssh
 curl -X POST \
   http://elastic:changeme@localhost:9200/report/_reindex \
@@ -168,14 +168,14 @@ curl -X POST \
 }'
 ```
 
-####Visualizar mapeamento de index
+#### Visualizar mapeamento de index
 ```ssh
 curl -X GET \
   http://elastic:changeme@localhost:9200/report/data_01/_mapping \
   -H 'Content-Type: application/json'
 ```
 
-####Alterar mapeamento de index
+#### Alterar mapeamento de index
 ```ssh
 curl -X PUT \
   http://elastic:changeme@localhost:9200/report/_mapping/data_01 \
