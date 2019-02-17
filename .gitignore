@@ -1,7 +1,6 @@
 .idea/
-./infrastructure/elk/logstash/queue/
-!./infrastructure/elk/logstash/queue/.gitkeep
-./infrastructure/elk/logstash/input/
-!./infrastructure/elk/logstash/input/.gitkeep
-./infrastructure/postgres/
-
+nfrastructure/elk/logstash/queue/
+!infrastructure/elk/logstash/queue/.gitkeep
+infrastructure/elk/logstash/input/
+!infrastructure/elk/logstash/input/.gitkeep
+infrastructure/postgres/
