@@ -1,0 +1,23 @@
+## Default Logstash configuration from logstash-docker.
+## from https://github.com/elastic/logstash-docker/blob/master/build/logstash/config/logstash.yml
+#
+http.host: "0.0.0.0"
+path.config: /usr/share/logstash/pipeline
+
+## Disable X-Pack
+## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
+##     https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html#xpack-enabling
+
+xpack.monitoring.enabled: false
+#xpack.monitoring.elasticsearch.url: https://elastic:AmJ5R7JKjiqL3HJvwTqAc0Wd@a010993755cbd53ac6a8a2f111b29772.sa-east-1.aws.found.io:9243
+
+pipeline.workers: 20
+pipeline.batch.size: 1000
+pipeline.batch.delay: 1
+
+queue.type: memory
+queue.max_bytes: 500mb
+
+#path.data: /usr/share/logstash/queue
+
+#config.reload.interval: 180s

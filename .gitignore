@@ -1,5 +1,7 @@
 .idea/
-importer/*
-input/*
-tmp
-/file/.sincedb
+./infrastructure/elk/logstash/queue/
+!./infrastructure/elk/logstash/queue/.gitkeep
+./infrastructure/elk/logstash/input/
+!./infrastructure/elk/logstash/input/.gitkeep
+./infrastructure/postgres/
+
