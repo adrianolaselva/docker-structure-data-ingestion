@@ -35,11 +35,15 @@ services:
       - ELASTICSEARCH_PASSWORD=${ELASTICSEARCH_PASSWORD}
       - xpack.monitoring.elasticsearch.username=${ELASTICSEARCH_USERNAME}
       - xpack.monitoring.elasticsearch.password=${ELASTICSEARCH_PASSWORD}
+      - REGION=${REGION}
+      - SQS_QUEUE=${SQS_QUEUE}
+      - ACCESS_KEY_ID=${ACCESS_KEY_ID}
+      - SECRET_ACCESS_KEY=${SECRET_ACCESS_KEY}
     volumes:
       - ./infrastructure/elk/logstash/pipeline/:/usr/share/logstash/pipeline/
       - ./infrastructure/elk/logstash/input/:/usr/share/logstash/data/plugins/inputs/file/
-      - ./infrastructure/elk/logstash/queue:/usr/share/logstash/queue
-      - ./infrastructure/elk/logstash/libs:/libs
+      - ./infrastructure/elk/logstash/queue/:/usr/share/logstash/queue/
+      - ./infrastructure/elk/logstash/libs:/libs/
     networks:
       - stack
     depends_on:

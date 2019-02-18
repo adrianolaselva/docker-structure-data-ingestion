@@ -1,0 +1,9 @@
+
+- pipeline.id: pipeline_1
+  path.config: "/usr/share/logstash/pipeline/pipeline_1/pgsql-to-elk.conf"
+  pipeline.workers: 1
+
+- pipeline.id: pipeline_2
+  path.config: "/usr/share/logstash/pipeline/pipeline_1/sqs-to-elk.conf"
+  pipeline.workers: 1
+#  queue.type: persisted

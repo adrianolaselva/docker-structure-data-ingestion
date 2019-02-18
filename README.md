@@ -11,9 +11,16 @@
 
 #### Conexão postgres
 
-```ssh
+```sh
 psql -h localhost -U conciliator -p 15432
 ```
+
+```sh
+aws sqs send-message \
+--queue-url=https://sqs.us-east-1.amazonaws.com/420945218315/queue_transactions \
+--message-body='{"id": "9999", "data" : "2019-01-01T00:00:00.000Z"}'
+```
+
 
 
 
