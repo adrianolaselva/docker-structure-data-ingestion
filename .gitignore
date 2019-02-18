@@ -1,6 +1,11 @@
 .idea/
-nfrastructure/elk/logstash/queue/
+ifrastructure/elk/logstash/pipeline/
+!infrastructure/elk/logstash/pipeline/.gitkeep
+ifrastructure/elk/logstash/queue/
 !infrastructure/elk/logstash/queue/.gitkeep
 infrastructure/elk/logstash/input/
 !infrastructure/elk/logstash/input/.gitkeep
 infrastructure/postgres/
+data/
+!data/.gitkeep
+.env
